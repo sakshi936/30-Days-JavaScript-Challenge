@@ -1,3 +1,4 @@
+// ****************************************** Task 1 *************************************************
 // declare variables with let and var assign let-> string, and var->number and log the values to console.
 
 let a='name';
@@ -5,11 +6,13 @@ var b=6;
 console.log(a); //name
 console.log(b); // 6
 
+// ****************************************** Task 2 *************************************************
 // declare const variable assign with boolean value and log to console
 
 const val = true;
 console.log(val); //true
 
+// ****************************************** Task 3 *************************************************
 // create variables with different datatypes (number,string,boolean,object,array) and log the values on console with typeof values.
 
 // let n= Number(8);
@@ -23,6 +26,7 @@ let obj ={ 1:'a',
     2:'b'
 }
 
+// ****************************************** Task 4 *************************************************
 let array = [1,2,3,4,5];
 
 console.log(`${typeof(n)} + ${n}`);   // number+8
@@ -32,12 +36,15 @@ console.log(`${typeof(obj)} + ${obj}`);  // object + [object Object]
 console.log(`${typeof(array)} + ${array}`);  //object + 1,2,3,4,5
 
 
+// ****************************************** Task 5 *************************************************
 // Reinitialize the let declare variable 
 // let a='name';
 
 console.log(`before reinitialize : ${a} + typeof: ${typeof a}`); // name, string
 a=46;
 console.log(`after reinitialize : ${a} + typeof: ${typeof a}`); // 46,number
+
+// ****************************************** Task 6 *************************************************
 // Reinitialize the const declare variable 
 //const val = true;
 
