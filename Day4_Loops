@@ -31,8 +31,12 @@ console.log(`factorial of ${num}  ${fact}`);
 // print pattren using nested for loop
 
 for(i=0;i<5;i++){
-    let str ='*'
-        console.log(str.repeat(i+1));
+  let str =''
+    for(let j=0;j<=i;j++){
+        str+='*';
+    }
+    
+    console.log(str);
     
 }
 
