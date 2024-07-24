@@ -23,5 +23,38 @@
 				style="display: none"
 			/>
 		</div>
+
+		<form id="form">
+			<input type="text" placeholder="name" name="fname" /> <br />
+			<input type="email" placeholder="email" name="email" />
+			<button type="submit">Submit</button>
+		</form>
+
+		<div style="margin: 1rem">
+			<label for="pet-select">Choose a pet:</label>
+			<br />
+			<select name="dropdown" id="dropdown-select">
+				<option value="">--Please choose an option--</option>
+				<option value="dog">Dog</option>
+				<option value="cat">Cat</option>
+				<option value="hamster">Hamster</option>
+				<option value="parrot">Parrot</option>
+				<option value="spider">Spider</option>
+				<option value="goldfish">Goldfish</option>
+			</select>
+			<h2>You Selected: <span id="option"> ?</span></h2>
+		</div>
+
+		<div>
+			<h3>Click the item log into console</h3>
+			<ul id="ul">
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+				<li>Item 4</li>
+			</ul>
+			<h4>Add new item in list</h4>
+			<button id="addChild">Click</button>
+		</div>
 	</body>
 </html>
