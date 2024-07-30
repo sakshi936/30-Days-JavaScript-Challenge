@@ -238,29 +238,60 @@ class BinaryTree{
         this.root =null;
     }
 
-    // insert(value){
-    //     const newNode = new TreeNode(value);
-    //     const current= this.root;
-    //     if(!current){
-    //         this.root= newNode;
-    //     }
-    //     else{
+    insert(value){
+        const newNode = new TreeNode(value);
+        let current= this.root;
+        if(!current){
+            this.root= newNode;
+        }
+        else{
 
-    //         if(this.root.value > newNode.value){
-    //             current = this.root.left;
+            while(true){
 
-    //             while(current){
-    //                 if(current.value > newNode.value){
-    //                     current =current.left;
-    //                 }
-    //                 else{
-    //                     current= current.right;
-    //                 }
-    //             }
-    //         }
-    //     }
+                if(value <current.value ){
+                    if(!current.left){
+                        current.left = newNode;
+                        return;
+                    }
+                    else
+                        current=current.left;
+                }
+                else{
+                    if(!current.right){
+                        current.right = newNode;
+                        return;
+                    }
+                    else
+                        current=current.right;
+                }
+            }
+            
+        }
 
-    // }
+    }
+
+    Inorder(node = this.root){
+        if(!node)
+                return;
+
+        this.Inorder(node.left);
+        console.log(node.value);
+        this.Inorder(node.right);
+    }
 }
 
+const BT = new BinaryTree();
+BT.insert(3);
+BT.insert(4);
+BT.insert(1);
+BT.insert(89);
+BT.insert(14);
+
+BT.Inorder();
+
+// _____________________________ Graph (Optional) ________________________________
+
+// Task 9. Implement a Graph class with methods to add vertices, add edges, and perform a breadth first search (BFS).
+
+// Task 10: Use the Graph class to represent a simple network and perform BFS to find the shortest path between two nodes.
 
